@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE Sistem - Detaylı Kılavuz</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0a1428;
+            color: #e2e8f0;
+            line-height: 1.75;
+        }
+        header {
+            background: linear-gradient(135deg, #1e2937, #334155);
+            padding: 90px 20px;
+            text-align: center;
+            border-bottom: 6px solid #22d3ee;
+        }
+        h1 {
+            font-size: 3.1rem;
+            color: #67e8f9;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 1.38rem;
+            color: #94a3b8;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #67e8f9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-btn:hover { color: #a5f3fc; }
+
+        .card {
+            background-color: #1e2937;
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 35px;
+            border-left: 6px solid #22d3ee;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+        h2 {
+            color: #67e8f9;
+            font-size: 1.85rem;
+            margin-bottom: 22px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 12px;
+        }
+        h3 {
+            color: #34d399;
+            margin: 28px 0 16px 0;
+        }
+        ul {
+            margin-left: 25px;
+        }
+        li {
+            margin-bottom: 14px;
+        }
+        .highlight {
+            background-color: #312e81;
+            padding: 28px;
+            border-radius: 14px;
+            border-left: 6px solid #818cf8;
+            margin: 30px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 70px 20px 50px;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        a { color: #67e8f9; }
+        a:hover { color: #a5f3fc; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PULSE Sistem</h1>
+        <p class="subtitle">Gelişmiş Kırılım Tespiti • Puanlama Sistemi • Momentum Analizi</p>
+    </header>
+
+    <div class="container">
+
+        <a href="index.html" class="back-btn">← Ana Sayfaya Dön</a>
+
+        <div class="card">
+            <h2>Genel Bakış</h2>
+            <p><strong>PULSE Sistem (PulseV2)</strong>, güçlü kırılım tespiti, akıllı puanlama sistemi ve momentum analizi üzerine kurulu modern bir trading indikatörüdür.</p>
+            <p>Direnç ve destek seviyelerini dinamik olarak takip eder, HACİM, RSI, ADX, MACD gibi faktörleri değerlendirerek sinyal kalitesini 5 üzerinden puanlar.</p>
+        </div>
+
+        <div class="card">
+            <h2>Ana Özellikler</h2>
+            <ul>
+                <li>🔸 Gelişmiş Kırılım Tespiti</li>
+                <li>🔸 Akıllı Sinyal Puanlama Sistemi (5 üzerinden)</li>
+                <li>🔸 Momentum ve Güç Analizi</li>
+                <li>🔸 RSI Aşırı Alım/Satım + Dip Dönüş Tespiti (Uyumsuzluklar)</li>
+                <li>🔸 ADX Trend Gücü + MACD Onayı</li>
+                <li>🔸 ATR ve FİBO Bazlı Otomatik Hedef Seviyeleri</li>
+                <li>🔸 Neon Direnç/Destek Görselleştirmesi</li>
+                <li>🔸 MTF (Multi Timeframe) Bias Paneli</li>
+                <li>🔸 5-8-13 EMA Desteği</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Sistem Nasıl Çalışır?</h2>
+            <h3>1. Kırılım Tespiti</h3>
+            <p>Pivot noktaları ve Donchian kanalları kullanarak dinamik direnç/destek seviyeleri belirler. Fiyat bu seviyeleri belirli bir yüzdeyle kırdığında sinyal adayı oluşur.</p>
+
+            <h3>2. Sinyal Puanlama</h3>
+            <p>Her sinyal için hacim artışı, RSI durumu, momentum, ADX ve MACD gibi faktörler değerlendirilir ve **5.0** üzerinden puan verilir.</p>
+
+            <h3>3. Görselleştirme</h3>
+            <p>Direnç ve destek neon gölgelerle gösterilir, kırılım sonrası mumlar renklendirilir, ATR veya FİBO bazlı hedef seviyeleri otomatik çizilir.</p>
+        </div>
+
+        <div class="highlight">
+            <strong>PULSE Sistem’in Güçlü Yönleri:</strong><br><br>
+            • Akıllı puanlama ile düşük kaliteli sinyalleri filtreler<br>
+            • Hacim + Momentum kombinasyonu<br>
+            • Gerçek zamanlı MTF paneli<br>
+            • ATR ve FİBO bazlı hedef seviyeleri
+        </div>
+
+        <!-- ====================== 1. RESİM ====================== -->
+        <div class="card">
+            <h2>PULSE Sinyal ve Kırılım Örneği</h2>
+            <img src="pulse-sinyal.jpg" 
+                 alt="PULSE Sistem Sinyal Örneği" 
+                 style="width: 100%; border-radius: 12px; margin: 15px 0; box-shadow: 0 8px 25px rgba(0,0,0,0.4);">
+            <p style="text-align: center; color: #94a3b8; margin-top: 10px; font-size: 0.95rem;">
+                PULSE Sistem - Kırılım Sinyali, Puanlama Sistemi ve Neon Görselleştirme
+            </p>
+        </div>
+
+        <!-- ====================== 2. RESİM ====================== -->
+        <div class="card">
+            <h2>PULSE Analiz Paneli</h2>
+            <img src="pulse-panel.jpg" 
+                 alt="PULSE Sistem Analiz Paneli" 
+                 style="width: 100%; border-radius: 12px; margin: 15px 0; box-shadow: 0 8px 25px rgba(0,0,0,0.4);">
+            <p style="text-align: center; color: #94a3b8; margin-top: 10px; font-size: 0.95rem;">
+                PULSE Sistem - Gerçek Zamanlı Analiz Paneli ve MTF Bias Gösterimi
+            </p>
+        </div>
+        <!-- ====================== RESİMLER SON ====================== -->
+
+        <div class="card">
+            <h2>Kullanım Önerileri</h2>
+            <ul>
+                <li>En iyi performans <strong>4S,/1G ve H</strong> grafiklerde alınır.</li>
+                <li>Sinyal gücü en az <strong>2.5 / 5.0</strong> olanları değerlendirin.</li>
+                <li>Yüksek hacimli ve trendli varlıklarda daha başarılı olur.</li>
+                <li>MTF panelini kontrol ederek higher timeframe uyumunu doğrulayın.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Erişim Bilgisi</h2>
+            <p>Bu indikatör <strong>invite-only</strong> olarak TradingView’de yayınlanmaktadır.</p>
+            <p>Erişim talebi için:</p>
+            <p><strong><a href="https://www.tradingview.com/u/Optimum__Trader/" target="_blank">@Optimum__Trader</a></strong></p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 OptimuM Trader • PULSE Sistem Detaylı Kılavuzu
+    </footer>
+
+</body>
+</html>
