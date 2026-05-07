@@ -36,53 +36,49 @@
 
         <div class="card">
             <h2>Genel Bakış</h2>
-            <p><strong>TRAPEX</strong>, klasik indikatörlerin ötesinde **"Tuzak Avcısı"** mantığıyla çalışan gelişmiş bir sistemdir. Piyasadaki stop hunt’ları, fake breakout’ları ve likidite havuzlarını (liquidity pool) tespit ederek yüksek olasılıklı reversal noktalarını yakalar.</p>
+            <p><strong>TRAPEX</strong>, piyasadaki likidite tuzaklarını (stop hunt, fake breakout), ani emilim noktalarını ve yüksek olasılıklı reversal bölgelerini tespit etmek için geliştirilmiş profesyonel bir <strong>Trap Detection & Reversal</strong> sistemidir.</p>
+            <p>Otomatik regresyon optimizasyonu, asimetrik dinamik huni, 7 kademeli atomic flow ve Gauss risk motoru ile çok güçlü sinyal üretir.</p>
         </div>
 
         <div class="card">
-            <h2>Sistemin Teknik Katmanları</h2>
-            <h3>1. Asimetrik Dinamik Huni Kanalı (En Özgün Özellik)</h3>
-            <p>Otomatik olarak en iyi regresyon periyodunu bulur, trendin anlık ivmesine göre bükülür ve asimetrik yapıdadır (üst ve alt bant genişlikleri farklıdır). Fiyat huninin dış bandına yaklaştığında tuzak olasılığı çok yükselir.</p>
-
-            <h3>2. Geometrik Yamuk (Trapez) Formasyon</h3>
-            <p>Pivot high ve low noktalarını baz alarak gerçek zamanlı yamuk çizer. Fiyat bu yamuğun köşelerine yaklaştığında güçlü reversal beklentisi oluşur.</p>
-
-            <h3>3. 7 Kademeli Atomic Flow & Absorption</h3>
-            <p>Gerçek hacim verisini mum içi 7 farklı kademeye dağıtarak delta hesaplar. 
-            - Kırmızı mumda **Mavi Nokta** = Güçlü Alıcı Emilimi (Bull Trap aşağıda bitebilir)<br>
-            - Yeşil mumda **Altın Nokta** = Güçlü Satıcı Emilimi (Bear Trap yukarıda bitebilir)</p>
-
-            <h3>4. Pressure Tunnel & Mega Order Flow</h3>
-            <p>Alıcı ve satıcı baskısını merdiven şeklinde gösterir. Mega Terminal ise canlı derinlik simülasyonu ve güç endeksi sunar.</p>
-
-            <h3>5. Gauss Risk Motoru</h3>
-            <p>Z-Score ve Gauss olasılık yoğunluğu ile riski 5 seviyede sınıflandırır (Düşük → Ekstrem).</p>
+            <h2>Ana Özellikler</h2>
+            <ul>
+                <li>🔸 Otomatik Regresyon Optimizasyonu (Pearson R² ile en iyi periyot bulma)</li>
+                <li>🔸 Dinamik Asimetrik Huni Kanalı (trend ivmesine göre gerçek zamanlı bükülme)</li>
+                <li>🔸 Geometrik Yamuk (Trapez) Formasyon Tespiti</li>
+                <li>🔸 7 Kademeli Atomic Flow & Absorption (Gerçek Delta + Emilim Tespiti)</li>
+                <li>🔸 Pressure Tunnel (Alıcı-Satıcı Baskı Merdivenleri)</li>
+                <li>🔸 Gauss Risk Motoru (Z-Score ve 5 seviye risk analizi)</li>
+                <li>🔸 Mega Order Flow Terminali (Canlı derinlik simülasyonu + Güç Endeksi)</li>
+                <li>🔸 Fraktal Etiketleme + Equilibrium Çizgisi</li>
+            </ul>
         </div>
 
         <div class="highlight">
-            <strong>TRAPEX’i Rakiplerinden Ayıranlar:</strong><br><br>
-            • 7 kademeli gerçek delta + absorption analizi<br>
-            • Asimetrik ve dinamik bükülen huni<br>
-            • Gerçek zamanlı likidite tuzağı tespiti
+            <strong>TRAPEX’in En Özgün Yanları:</strong><br><br>
+            • Gerçek hacim verisini 7 kademeye dağıtarak absorption tespiti<br>
+            • Asimetrik + dinamik bükülen huni yapısı<br>
+            • Atomic delta ile stop hunt ve likidite tuzağı yakalama yeteneği
         </div>
 
         <div class="card">
             <h2>Kullanım Stratejisi (Adım Adım)</h2>
             
-            <h3>✅ Long (Alış) Setup</h3>
+            <h3>✅ Long (Alış) Girişi</h3>
             <ul>
-                <li>Fiyat huni alt bandına yaklaşıyor</li>
-                <li>Mavi absorption noktası (bull absorption) oluşuyor</li>
-                <li>Gauss Risk Orta veya Düşük seviyede</li>
+                <li>Fiyat Asimetrik Huni’nin alt bandına yaklaşıyor</li>
+                <li>Mavi nokta (Bull Absorption) görünüyor</li>
+                <li>Gauss Risk seviyesi Orta veya Düşük</li>
                 <li>Pressure Tunnel’da alıcı baskı ağır basıyor</li>
-                <li>Giriş: Absorption mumu kapanışına veya 1-2 tick üstüne</li>
+                <li>Giriş: Absorption mumu kapanışına veya hemen üstüne</li>
+                <li>Stop: Son pivot low’un 1-1.5 ATR altına</li>
             </ul>
 
-            <h3>✅ Short (Satış) Setup</h3>
+            <h3>✅ Short (Satış) Girişi</h3>
             <ul>
-                <li>Fiyat huni üst bandına yaklaşıyor</li>
-                <li>Altın absorption noktası (bear absorption) oluşuyor</li>
-                <li>Gauss Risk Yüksek seviyede</li>
+                <li>Fiyat Huni’nin üst bandına yaklaşıyor</li>
+                <li>Altın nokta (Bear Absorption) görünüyor</li>
+                <li>Gauss Risk seviyesi Yüksek</li>
                 <li>Giriş: Absorption mumu altına</li>
             </ul>
         </div>
@@ -90,20 +86,19 @@
         <div class="card">
             <h2>Önerilen Ayarlar ve İpuçları</h2>
             <ul>
-                <li>Timeframe: <strong>1H (en optimum)</strong>, 15m ve 4H de çok etkili</li>
-                <li>Huni Genişliği (rho_mult): 2.4 - 2.6</li>
-                <li>Pivot Hassasiyeti: 10</li>
-                <li>Atomic Flow ve Pressure Tunnel: Açık tutun</li>
-                <li>En güçlü olduğu durum: Likidite sweep sonrası (eşit yüksek/düşük kırılımları)</li>
-                <li>Stop-loss: Her zaman son pivotun 1-1.5 ATR dışına</li>
-                <li>Hedef: Minimum 1:2.5 Risk/Reward</li>
+                <li><strong>En İyi Timeframe:</strong> 1H (en optimum), 15m ve 4H de çok iyi</li>
+                <li><strong>Huni Genişliği:</strong> 2.4 - 2.6</li>
+                <li><strong>Pivot Hassasiyeti:</strong> 10</li>
+                <li><strong>Atomic Flow & Pressure Tunnel:</strong> Açık</li>
+                <li>Likidite sweep (eşit yüksek/düşük) sonrası çok güçlü çalışır</li>
+                <li>Minimum 1:2.5 Risk/Reward hedefleyin</li>
             </ul>
         </div>
 
         <div class="card">
             <h2>Erişim Bilgisi</h2>
-            <p>TRAPEX <strong>sadece aktif abonelere özel</strong> tanımlanmaktadır.</p>
-            <p>Sorularınız ve destek için: <strong><a href="https://x.com/Optimum__Trader" target="_blank">@Optimum__Trader</a></strong></p>
+            <p>Bu sistem <strong>sadece aktif abonelere özel</strong> tanımlanmaktadır.</p>
+            <p>Sorularınız için: <strong><a href="https://x.com/Optimum__Trader" target="_blank">@Optimum__Trader</a></strong></p>
         </div>
 
     </div>
