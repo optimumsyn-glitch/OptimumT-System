@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAPEX - Detaylı Kılavuz | OptimumT-System</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background:#0f172a; color:#e2e8f0; line-height:1.6; padding:40px; max-width:1100px; margin:auto; }
+        h1, h2, h3 { color:#00e5ff; }
+        .badge { background:#c026d3; color:white; padding:5px 12px; border-radius:9999px; font-size:0.9rem; display:inline-block; margin-bottom:15px; }
+        table { width:100%; border-collapse:collapse; margin:20px 0; }
+        th, td { padding:12px; border:1px solid #334155; text-align:left; }
+        th { background:#1e2937; }
+        .note { background:#1e2937; padding:15px; border-left:4px solid #00e5ff; margin:20px 0; }
+        ul { padding-left:20px; }
+    </style>
+</head>
+<body>
+
+<h1>◆ TRAPEX SİSTEMİ</h1>
+<p><strong class="badge">INVITE-ONLY EXTRA • Sadece Aktif Aboneler</strong></p>
+
+<p><strong>TRAPEX</strong>, piyasadaki likidite tuzaklarını (stop hunt, fake breakout), ani emilim noktalarını ve yüksek olasılıklı reversal bölgelerini tespit etmek üzere geliştirilmiş profesyonel bir <strong>Trap Detection & Reversal</strong> sistemidir.</p>
+
+<hr>
+
+<h2>1. Sistem Mantığı</h2>
+<p>TRAPEX üç temel katmandan oluşur:</p>
+<ul>
+    <li><strong>Dinamik Regresyon + Asimetrik Huni</strong> → Trendin gücünü ve bükülmesini gerçek zamanlı ölçer</li>
+    <li><strong>Geometrik Trap Tespiti</strong> → Yamuk (trapez) formasyonları ve pivot noktaları ile tuzak bölgelerini çizer</li>
+    <li><strong>Order Flow & Risk Motoru</strong> → Atomic delta, absorption, pressure tunnel ve Gauss olasılık analizi</li>
+</ul>
+
+<h2>2. En İyi Kullanım Koşulları</h2>
+<table>
+    <tr><th>Timeframe</th><td><strong>1H</strong> (en optimum) • 15m ve 4H de çok iyidir</td></tr>
+    <tr><th>Varlıklar</th><td>XAUUSD, BTC/USDT, EURUSD, GBPUSD, NAS100, SPX500</td></tr>
+    <tr><th>Piyasa Türü</th><td>Yüksek volatilite • Range’den breakout • Haber sonrası • Likidite sweep bölgeleri</td></tr>
+    <tr><th>Strateji</th><td>Likidite Tuzağı Tespiti • Reversal • Aggressive Pullback • Stop Hunt Yakalama</td></tr>
+</table>
+
+<h2>3. Ayarlar ve Önerilen Değerler</h2>
+<table>
+    <tr><th>Ayar</th><th>Önerilen</th><th>Açıklama</th></tr>
+    <tr><td>En İyi Periyodu Otomatik Bul</td><td>Açık (True)</td><td>10-100 arası en güçlü regresyon periyodunu otomatik seçer</td></tr>
+    <tr><td>Huni Genişliği (rho_mult)</td><td>2.3 - 2.7</td><td>Ne kadar geniş huni istersen o kadar yüksek</td></tr>
+    <tr><td>Pivot Hassasiyeti</td><td>10</td><td>10-12 arası en dengeli</td></tr>
+    <tr><td>Atomic Flow</td><td>Açık</td><td>Emilim noktalarını gösterir (çok kritik)</td></tr>
+    <tr><td>Pressure Tunnel</td><td>Açık</td><td>Alıcı-Satıcı baskı merdivenleri</td></tr>
+    <tr><td>Mega Terminal</td><td>Medium</td><td>Canlı derinlik ve güç endeksi</td></tr>
+</table>
+
+<h2>4. Nasıl Kullanılır? (Adım Adım Strateji)</h2>
+
+<h3>✅ Long (Alış) Girişi</h3>
+<ol>
+    <li>Fiyat huni alt bandına yaklaşıp <strong>mavi nokta (bull absorption)</strong> oluşsun</li>
+    <li>Gauss Risk seviyesi <strong>Orta veya Düşük</strong> olsun</li>
+    <li>Pressure Tunnel’da mavi (alıcı) baskı ağır bassın</li>
+    <li>Giriş: Absorption mumunun kapanışına veya hemen üstüne</li>
+</ol>
+
+<h3>✅ Short (Satış) Girişi</h3>
+<ol>
+    <li>Fiyat huni üst bandına yaklaşıp <strong>altın nokta (bear absorption)</strong> oluşsun</li>
+    <li>Gauss Risk seviyesi <strong>Yüksek</strong> olsun</li>
+    <li>Giriş: Absorption mumunun altına</li>
+</ol>
+
+<div class="note">
+    <strong>Pro İpucu:</strong> Özellikle eşit yüksek/düşük kırılımlarından (liquidity sweep) sonra çok güçlü çalışır.
+</div>
+
+<p style="text-align:center; margin-top:50px; color:#64748b;">
+    OptimumT-System © 2026 • TRAPEX v1.0
+</p>
+
+</body>
+</html>
