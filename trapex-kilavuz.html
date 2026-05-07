@@ -15,6 +15,7 @@
         .back-btn:hover { color: #a5f3fc; }
         .card { background-color: #1e2937; border-radius: 16px; padding: 35px; margin-bottom: 35px; border-left: 6px solid #22d3ee; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
         h2 { color: #67e8f9; font-size: 1.85rem; margin-bottom: 22px; border-bottom: 2px solid #334155; padding-bottom: 12px; }
+        h3 { color: #34d399; margin: 28px 0 16px 0; }
         ul { margin-left: 25px; }
         li { margin-bottom: 14px; }
         .highlight { background-color: #312e81; padding: 28px; border-radius: 14px; border-left: 6px solid #818cf8; margin: 30px 0; }
@@ -35,38 +36,65 @@
 
         <div class="card">
             <h2>Genel Bakış</h2>
-            <p><strong>TRAPEX</strong>, piyasadaki likidite tuzaklarını, stop hunt’ları ve false breakout’ları yüksek doğrulukla tespit eden gelişmiş bir Trap Detection & Reversal sistemidir.</p>
+            <p><strong>TRAPEX</strong>, piyasadaki likidite tuzaklarını (stop hunt, fake breakout), ani emilim noktalarını ve yüksek olasılıklı reversal bölgelerini tespit etmek için özel olarak geliştirilmiş profesyonel bir <strong>Trap Detection & Reversal</strong> sistemidir.</p>
         </div>
 
         <div class="card">
             <h2>Ana Özellikler</h2>
             <ul>
-                <li>🔸 Otomatik Regresyon Optimizasyonu + Dinamik Asimetrik Huni</li>
+                <li>🔸 Otomatik Regresyon Optimizasyonu (Pearson R² ile en iyi periyot bulma)</li>
+                <li>🔸 Dinamik Asimetrik Huni Kanalı (trend ivmesine göre bükülme)</li>
                 <li>🔸 Geometrik Yamuk (Trapez) Formasyon Tespiti</li>
-                <li>🔸 Atomic Flow & Absorption (7 kademeli mikro delta)</li>
+                <li>🔸 7 Kademeli Atomic Flow & Absorption (Gerçek delta analizi)</li>
                 <li>🔸 Pressure Tunnel (Alıcı-Satıcı Baskı Merdivenleri)</li>
-                <li>🔸 Gauss Risk Motoru + Mega Order Flow Terminali</li>
+                <li>🔸 Gauss Risk Motoru (Z-Score + Olasılık Yoğunluğu)</li>
+                <li>🔸 Mega Order Flow Terminali (Canlı Derinlik Simülasyonu)</li>
             </ul>
         </div>
 
         <div class="highlight">
-            <strong>TRAPEX’in En Özgün Yönü:</strong> Gerçek hacim verisini 7 kademeye dağıtarak absorption tespiti yapması ve asimetrik dinamik huni yapısı.
+            <strong>TRAPEX’in En Özgün Yönleri:</strong><br><br>
+            • Gerçek hacim verisini 7 kademeye dağıtarak absorption tespiti yapması<br>
+            • Asimetrik + dinamik bükülen huni yapısı<br>
+            • Atomic delta ile stop hunt ve likidite tuzağı yakalama
+        </div>
+
+        <div class="card">
+            <h2>Nasıl Kullanılır? (Strateji)</h2>
+            
+            <h3>Long (Alış) Setup</h3>
+            <ul>
+                <li>Fiyat Asimetrik Huni’nin alt bandına yaklaşıyor</li>
+                <li>Mavi nokta (Bull Absorption) oluşuyor</li>
+                <li>Gauss Risk seviyesi Orta veya Düşük</li>
+                <li>Pressure Tunnel’da alıcı baskı ağır basıyor</li>
+            </ul>
+
+            <h3>Short (Satış) Setup</h3>
+            <ul>
+                <li>Fiyat Huni’nin üst bandına yaklaşıyor</li>
+                <li>Altın nokta (Bear Absorption) oluşuyor</li>
+                <li>Gauss Risk seviyesi Yüksek</li>
+            </ul>
         </div>
 
         <div class="card">
             <h2>Kullanım Önerileri</h2>
             <ul>
-                <li>En iyi performans <strong>1H</strong> timeframe’dedir.</li>
-                <li>Likidite sweep sonrası çok güçlü sinyal verir.</li>
-                <li>Gauss Risk seviyesi “Orta” ve altı olan setup’ları tercih edin.</li>
+                <li>En iyi performans: <strong>1H</strong> timeframe (15m ve 4H de çok iyi)</li>
+                <li>En güçlü olduğu varlıklar: XAUUSD, BTC, Majör Forex, ABD Endeksleri</li>
+                <li>Likidite sweep (eşit yüksek/düşük kırılımları) sonrası çok etkilidir</li>
+                <li>Her zaman ATR tabanlı stop-loss kullanın (minimum 1:2.5 R:R)</li>
             </ul>
         </div>
 
         <div class="card">
             <h2>Erişim Bilgisi</h2>
-            <p>Bu sistem <strong>sadece aktif abonelere</strong> tanımlanmaktadır.</p>
-            <p>Sorularınız için: <strong><a href="https://x.com/Optimum__Trader" target="_blank">@Optimum__Trader</a></strong></p>
+            <p>Bu sistem <strong>sadece aktif abonelere özel</strong> tanımlanmaktadır.</p>
+            <p>Herhangi bir sorunuzda bana ulaşabilirsiniz.</p>
+            <p><strong><a href="https://x.com/Optimum__Trader" target="_blank">@Optimum__Trader</a></strong></p>
         </div>
+
     </div>
 
     <footer>
