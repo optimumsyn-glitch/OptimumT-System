@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAPEX-GEO-T - Geometrik Trap Detection Sistemi</title>
+    <title>TRAPEX-GEO-T - Kullanım Kılavuzu</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
@@ -24,11 +24,11 @@
             margin-bottom: 12px; 
         }
         .subtitle { 
-            font-size: 1.4rem; 
+            font-size: 1.42rem; 
             color: #94a3b8; 
         }
         .container { 
-            max-width: 1150px; 
+            max-width: 1180px; 
             margin: 50px auto; 
             padding: 0 25px; 
         }
@@ -49,17 +49,8 @@
             border-left: 6px solid #c084fc; 
             box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
         }
-        h2 { 
-            color: #c084fc; 
-            font-size: 1.9rem; 
-            margin-bottom: 22px; 
-            border-bottom: 2px solid #334155; 
-            padding-bottom: 12px; 
-        }
-        h3 { 
-            color: #67e8f9; 
-            margin: 28px 0 16px 0; 
-        }
+        h2 { color: #c084fc; font-size: 1.9rem; margin-bottom: 22px; border-bottom: 2px solid #334155; padding-bottom: 12px; }
+        h3 { color: #67e8f9; margin: 28px 0 16px 0; }
         ul { margin-left: 25px; }
         li { margin-bottom: 14px; }
         .highlight { 
@@ -69,27 +60,25 @@
             border-left: 6px solid #a78bfa; 
             margin: 30px 0; 
         }
+        img { 
+            width: 100%; 
+            border-radius: 12px; 
+            margin: 20px 0; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4); 
+        }
         footer { 
             text-align: center; 
             padding: 70px 20px 50px; 
             color: #64748b; 
             font-size: 0.95rem; 
         }
-        a { color: #c084fc; }
-        a:hover { color: #e0bbff; }
-        img {
-            width: 100%; 
-            border-radius: 12px; 
-            margin: 15px 0; 
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>TRAPEX-GEO-T</h1>
-        <p class="subtitle">Geometrik Trend + Hibrit Huni + Wyckoff & VSA + BIST Tarayıcı</p>
+        <h1>TRAPEX-GEO-T v6</h1>
+        <p class="subtitle">Geometrik Trend • Hibrit Huni • Wyckoff & VSA • BIST Tarayıcı</p>
     </header>
 
     <div class="container">
@@ -97,100 +86,76 @@
 
         <div class="card">
             <h2>Genel Bakış</h2>
-            <p><strong>TRAPEX-GEO-T v6</strong>, geometrik ağırlık merkezi (ICS), dinamik hibrit huni ve gelişmiş Wyckoff/VSA entegrasyonu ile güçlendirilmiş profesyonel bir <strong>Trap & Reversal Detection</strong> sistemidir.</p>
-            <p>Regresyon tabanlı geometrik trend çizgileri, hacim ağırlıklı dinamik huni ve gerçek zamanlı BIST tarayıcı ile tam entegre çalışır.</p>
+            <p><strong>TRAPEX-GEO-T v6</strong>, geometrik ağırlık merkezi regresyonu, dinamik hibrit huni ve kurumsal hacim analizi ile güçlendirilmiş profesyonel bir Trap & Reversal Detection sistemidir.</p>
         </div>
 
         <div class="card">
-            <h2>Yeni Versiyon Özellikleri (v6)</h2>
+            <h2>v6’da Yeni ve Güçlü Özellikler</h2>
             <ul>
-                <li>🔸 <strong>Geometrik Ağırlık Merkezi Trend Çizgileri (ICS)</strong> — 35 barlık merkez fiyat regresyonu + açı göstergesi</li>
-                <li>🔸 <strong>Hibrit Parabolik Huni Motoru</strong> — Volatiliteye ve hacme göre dinamik bükülen asimetrik kanal</li>
-                <li>🔸 <strong>Dinamik Standart Sapma Hedefleri</strong> — Sağ tarafa projeksiyonlu σ hedefleri</li>
-                <li>🔸 Gelişmiş Intrabar Hacim Analizi (1 saniye)</li>
-                <li>🔸 Tam Wyckoff Spring + Effort vs Result + Absorption Tespiti</li>
-                <li>🔸 "Yay" (Release) Motoru — Isınan Yay + Tetiklenme Görselleştirmesi</li>
-                <li>🔸 Kurumsal Balina Maliyet Tahmincisi (Whale Cost Tracker)</li>
-                <li>🔸 Termal Akümülâsyon Skoru (5 kademeli ısı matrisi)</li>
-                <li>🔸 Gerçek Zamanlı BIST 35 Hisse Tarayıcı (Spring + Yay Durumu)</li>
-                <li>🔸 Gelişmiş Mum Formasyon Motoru (Marubozu, Yutan, 3 Asker, Çekiç vb.)</li>
+                <li>🔸 <strong>Geometrik ICS Trend Çizgileri</strong> (Ağırlık Merkezi + Açı Göstergesi)</li>
+                <li>🔸 <strong>Hibrit Parabolik Huni</strong> (Hacim ve volatiliteye göre dinamik bükülme)</li>
+                <li>🔸 Dinamik Standart Sapma Hedefleri (Sağa projeksiyon)</li>
+                <li>🔸 Gelişmiş Intrabar Hacim + VSA Emilim Motoru</li>
+                <li>🔸 Wyckoff Spring + "Isınan Yay" Tespiti</li>
+                <li>🔸 Kurumsal Balina Maliyet Tahmincisi</li>
+                <li>🔸 Termal Akümülâsyon Isı Skoru (5 kademeli)</li>
+                <li>🔸 Gerçek Zamanlı 35 Hisse BIST Tarayıcı Paneli</li>
             </ul>
         </div>
 
         <div class="highlight">
-            <strong>TRAPEX-GEO-T v6’nın En Güçlü Yönleri:</strong><br><br>
-            • Geometrik ICS Trend Çizgileri<br>
-            • Hacim ağırlıklı dinamik hibrit huni<br>
-            • Kurumsal Isı Skoru + Balina Maliyeti Takibi<br>
-            • 35 Hisse BIST Tarayıcı Paneli
-        </div>
-
-        <div class="card">
-            <h2>Kullanım Stratejisi (Long / Short)</h2>
-            
-            <h3>✅ Long (Alış) Setup</h3>
-            <ul>
-                <li>Fiyat Geometrik Trend alt bandına veya Huni alt sınırına yaklaşıyor</li>
-                <li>Spring veya Çekiç formasyonu + Pozitif Delta</li>
-                <li>Termal Skor yükseliyor ([■■■□□] ve üzeri)</li>
-                <li>Balina Maliyeti altına sarkma + Wyckoff Spring</li>
-                <li>Giriş: Spring mumu kapanışına veya huni orta banda</li>
-            </ul>
-
-            <h3>✅ Short (Satış) Setup</h3>
-            <ul>
-                <li>Fiyat Huni üst bandına çarpıyor</li>
-                <li>Yüksek negatif imbalance + Bear Absorption</li>
-                <li>Geometrik Trend açısı negatif ve düşüyor</li>
-            </ul>
+            <strong>En Önemli Yenilikler:</strong> Geometrik Trend + Dinamik Huni + Kurumsal Isı Skoru + BIST Tarayıcı
         </div>
 
         <div class="card">
             <h2>Önerilen Ayarlar</h2>
             <ul>
-                <li>Manuel Regresyon Periyodu → <strong>89</strong> (en optimum)</li>
-                <li>Huni Kanal Genişliği (rho_mult) → <strong>2.4 - 2.6</strong></li>
-                <li>VSA Emilim Hassasiyeti → <strong>1.5</strong></li>
-                <li>Baskı Hassasiyeti → <strong>2.0</strong></li>
+                <li>Manuel Regresyon Periyodu → <strong>89</strong></li>
+                <li>Huni Kanal Genişliği (rho_mult) → <strong>2.5</strong></li>
+                <li>VSA Emilim Hassasiyeti → 1.5</li>
+                <li>Baskı Hassasiyeti → 2.0</li>
                 <li>Geometrik Trend Çizgileri → Açık</li>
                 <li>Sapma Hedeflerini Göster → Açık</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2>En İyi Kullanım Koşulları</h2>
+            <h2>Kullanım Stratejisi</h2>
+            
+            <h3>✅ Long (Alış) Setup</h3>
             <ul>
-                <li><strong>Timeframe:</strong> 1G (en güçlü), 4H ve 2H</li>
-                <li>Yüksek likiditeli BIST hisseleri</li>
-                <li>Akümülasyon / Dağıtım fazlarında özellikle güçlü</li>
-                <li>Volatilite artışı dönemlerinde mükemmel performans</li>
+                <li>Fiyat geometrik trend veya huni alt bandına yaklaşıyor</li>
+                <li>Spring / Çekiç formasyonu + Pozitif Delta</li>
+                <li>Termal Skor yükseliyor</li>
+                <li>Balina maliyeti altına sarkma</li>
+            </ul>
+
+            <h3>✅ Short (Satış) Setup</h3>
+            <ul>
+                <li>Fiyat huni üst bandına çarpıyor</li>
+                <li>Yüksek negatif imbalance</li>
+                <li>Geometrik trend açısı negatif</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2>TRAPEX-GEO-T Örnek Görseller</h2>
-            
-            <h3>Geometrik Trend + Hibrit Huni</h3>
-            <img src="Trapex-huni.png" alt="TRAPEX-GEO-T Huni ve Geo Trend" style="width: 100%;">
-            <p style="text-align:center; color:#94a3b8;">Geometrik ICS Trend + Dinamik Hibrit Huni</p>
+            <h2>TRAPEX-GEO-T Ekran Görüntüleri</h2>
+            <img src="Trapex-huni.png" alt="Geometrik Huni">
+            <p style="text-align:center; color:#94a3b8;">Geometrik ICS Trend + Hibrit Huni</p>
 
-            <h3>Tam Ekran + BIST Tarayıcı Paneli</h3>
-            <img src="Trapex-full.png" alt="TRAPEX-GEO-T Tam Ekran" style="width: 100%;">
-            <p style="text-align:center; color:#94a3b8;">Tam Ekran Görünüm + Sağ Panel + BIST Tarayıcı</p>
+            <img src="Trapex-full.png" alt="Tam Ekran">
+            <p style="text-align:center; color:#94a3b8;">Tam Ekran + BIST Tarayıcı Paneli</p>
         </div>
-        
+
         <div class="card">
-            <h2>Erişim ve Destek</h2>
-            <p>TRAPEX-GEO-T <strong>sadece Premium X abonelere özel</strong> olarak paylaşılmaktadır.</p>
-            <p>Sorularınız ve güncellemeler için: 
-                <strong><a href="https://x.com/Optimum__Trader" target="_blank">@Optimum__Trader</a></strong>
-            </p>
+            <h2>Erişim</h2>
+            <p>TRAPEX-GEO-T <strong>sadece Premium kullanıcılara</strong> özel olarak sunulmaktadır.</p>
+            <p>Sorularınız için: <strong><a href="https://x.com/Optimum__Trader" target="_blank">@Optimum__Trader</a></strong></p>
         </div>
-
     </div>
 
     <footer>
-        © 2026 OptimuM Trader • TRAPEX-GEO-T v6 • Geometrik Trap Detection Sistemi
+        © 2026 OptimuM Trader • TRAPEX-GEO-T v6 • trapex-kilavuz.html
     </footer>
 
 </body>
